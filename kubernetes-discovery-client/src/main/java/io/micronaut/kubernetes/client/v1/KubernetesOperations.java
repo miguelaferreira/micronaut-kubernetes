@@ -180,6 +180,6 @@ public interface KubernetesOperations {
      * @param pod the pod to create
      * @return A {@Pod} instance
      */
-    @Post("/namespaces/{namespace}/pods/{podName}")
+    @Post("/namespaces/{namespace}/pods")
     Publisher<Pod> createPod(String namespace, @Body Pod pod);
 }
