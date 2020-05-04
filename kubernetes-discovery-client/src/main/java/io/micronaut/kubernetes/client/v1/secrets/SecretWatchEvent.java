@@ -17,7 +17,6 @@
 package io.micronaut.kubernetes.client.v1.secrets;
 
 import io.micronaut.core.annotation.Introspected;
-import io.micronaut.kubernetes.client.v1.secrets.Secret;
 
 /**
  * Represents a Secret watch event returned from the Kubernetes API.
