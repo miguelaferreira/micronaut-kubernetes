@@ -17,8 +17,10 @@
 package io.micronaut.kubernetes.client.v1;
 
 import io.micronaut.http.MediaType;
+import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Consumes;
 import io.micronaut.http.annotation.Get;
+import io.micronaut.http.annotation.Post;
 import io.micronaut.kubernetes.client.v1.configmaps.ConfigMap;
 import io.micronaut.kubernetes.client.v1.configmaps.ConfigMapList;
 import io.micronaut.kubernetes.client.v1.configmaps.ConfigMapWatchEvent;
@@ -172,4 +174,12 @@ public interface KubernetesOperations {
     @Get("/namespaces/{namespace}/pods/{podName}")
     Publisher<Pod> getPod(String namespace, String podName);
 
+    /**
+     * Returns the created {@link Pod} in the given namespace.
+     * @param namespace object name and auth scope, such as for teams and projects
+     * @param pod the pod to create
+     * @return A {@Pod} instance
+     */
+    @Post("/namespaces/{namespace}/pods/{podName}")
+    Publisher<Pod> createPod(String namespace, @Body Pod pod);
 }

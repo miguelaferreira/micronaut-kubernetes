@@ -29,6 +29,7 @@ import io.micronaut.kubernetes.client.v1.KubernetesObject;
 public class Pod extends KubernetesObject {
 
     private PodStatus status;
+    private PodSpec spec;
 
     /**
      * @return pod status information
