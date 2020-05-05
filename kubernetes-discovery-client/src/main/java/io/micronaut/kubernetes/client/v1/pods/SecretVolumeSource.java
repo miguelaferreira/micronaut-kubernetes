@@ -20,4 +20,35 @@ public class SecretVolumeSource {
     private int defaultMode;
     private List<KeyToPath> items;
 
+    public String getSecretName() {
+        return secretName;
+    }
+
+    public void setSecretName(final String secretName) {
+        this.secretName = secretName;
+    }
+
+    public boolean isOptional() {
+        return optional;
+    }
+
+    public void setOptional(final boolean optional) {
+        this.optional = optional;
+    }
+
+    public int getDefaultMode() {
+        return defaultMode;
+    }
+
+    public void setDefaultMode(final int defaultMode) {
+        this.defaultMode = defaultMode;
+    }
+
+    public List<KeyToPath> getItems() {
+        return items;
+    }
+
+    public void setItems(final List<KeyToPath> items) {
+        this.items = items;
+    }
 }

@@ -16,4 +16,19 @@ public class Volume {
     private String name;
     private SecretVolumeSource secret;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public SecretVolumeSource getSecret() {
+        return secret;
+    }
+
+    public void setSecret(final SecretVolumeSource secret) {
+        this.secret = secret;
+    }
 }

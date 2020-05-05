@@ -14,4 +14,20 @@ import io.micronaut.core.annotation.Introspected;
 public class EnvFromSource {
     private ConfigMapEnvSource configMapRef;
     private SecretEnvSource secretRef;
+
+    public ConfigMapEnvSource getConfigMapRef() {
+        return configMapRef;
+    }
+
+    public void setConfigMapRef(final ConfigMapEnvSource configMapRef) {
+        this.configMapRef = configMapRef;
+    }
+
+    public SecretEnvSource getSecretRef() {
+        return secretRef;
+    }
+
+    public void setSecretRef(final SecretEnvSource secretRef) {
+        this.secretRef = secretRef;
+    }
 }

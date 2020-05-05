@@ -14,4 +14,20 @@ import io.micronaut.core.annotation.Introspected;
 public class ConfigMapEnvSource {
     private String name;
     private boolean optional;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public boolean isOptional() {
+        return optional;
+    }
+
+    public void setOptional(final boolean optional) {
+        this.optional = optional;
+    }
 }

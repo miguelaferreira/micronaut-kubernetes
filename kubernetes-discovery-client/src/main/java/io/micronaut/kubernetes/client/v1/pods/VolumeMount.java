@@ -15,4 +15,20 @@ import io.micronaut.core.annotation.Introspected;
 public class VolumeMount {
     private String name;
     private String mountPath;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public String getMountPath() {
+        return mountPath;
+    }
+
+    public void setMountPath(final String mountPath) {
+        this.mountPath = mountPath;
+    }
 }

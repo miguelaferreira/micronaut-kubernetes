@@ -50,6 +50,15 @@ public class Pod extends KubernetesObject {
         return "Pod{" +
                 "metadata=" + getMetadata() +
                 ", status=" + status +
+                ", spec=" + spec +
                 '}';
+    }
+
+    public PodSpec getSpec() {
+        return spec;
+    }
+
+    public void setSpec(final PodSpec spec) {
+        this.spec = spec;
     }
 }

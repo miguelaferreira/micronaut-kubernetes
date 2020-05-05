@@ -23,4 +23,68 @@ public class Container {
     private String image;
     private String imagePullPolicy;
     private List<VolumeMount> volumeMounts;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public List<String> getArgs() {
+        return args;
+    }
+
+    public void setArgs(final List<String> args) {
+        this.args = args;
+    }
+
+    public List<String> getCommand() {
+        return command;
+    }
+
+    public void setCommand(final List<String> command) {
+        this.command = command;
+    }
+
+    public List<EnvVar> getEnv() {
+        return env;
+    }
+
+    public void setEnv(final List<EnvVar> env) {
+        this.env = env;
+    }
+
+    public List<EnvFromSource> getEnvFrom() {
+        return envFrom;
+    }
+
+    public void setEnvFrom(final List<EnvFromSource> envFrom) {
+        this.envFrom = envFrom;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(final String image) {
+        this.image = image;
+    }
+
+    public String getImagePullPolicy() {
+        return imagePullPolicy;
+    }
+
+    public void setImagePullPolicy(final String imagePullPolicy) {
+        this.imagePullPolicy = imagePullPolicy;
+    }
+
+    public List<VolumeMount> getVolumeMounts() {
+        return volumeMounts;
+    }
+
+    public void setVolumeMounts(final List<VolumeMount> volumeMounts) {
+        this.volumeMounts = volumeMounts;
+    }
 }
